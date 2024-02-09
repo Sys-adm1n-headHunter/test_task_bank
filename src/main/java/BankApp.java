@@ -5,6 +5,7 @@ public class BankApp extends AccountTransaction {
     private static double amount = 0;
     private boolean isExit = false;
 
+    //   Метод для выбора операции
     public void choosingAnOperation() {
         Scanner scanner = new Scanner(System.in);
         int operationNumber;
@@ -25,8 +26,8 @@ public class BankApp extends AccountTransaction {
                 switch (operationNumber) {
                     case 1:
                         System.out.print("Введите сумму для пополнения: ");
-                            deposit(checkTransactitOperation(),LocalDate.now());
-                            break;
+                        deposit(checkTransactitOperation(), LocalDate.now());
+                        break;
                     case 2:
                         System.out.print("Введите сумму для снятия: ");
                         withdraw(checkTransactitOperation(), LocalDate.now());
