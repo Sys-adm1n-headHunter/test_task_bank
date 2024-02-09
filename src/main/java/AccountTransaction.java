@@ -63,7 +63,7 @@ public class AccountTransaction implements SavingsAccount {
         System.out.println("Баланс на счете: " + balance + " руб.");
     }
 
-//    Вынес отдельно метод по проверки корректности ввода суммы для зачисления/списания
+    //    Вынес отдельно метод по проверки корректности ввода суммы для зачисления/списания
     public double checkTransactitOperation() {
         double amount;
         Scanner scanner = new Scanner(System.in);
@@ -76,7 +76,7 @@ public class AccountTransaction implements SavingsAccount {
                 if (amount > 0) {
                     scanner.nextLine();
                     return amount;
-                }else {
+                } else {
                     System.out.println("Некорректная сумма!");
                     scanner.nextLine();
                 }
